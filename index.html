@@ -133,14 +133,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/121.loader.js'
+                    unityLoader.src = 'Build/postweb 2.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/121.data.unityweb',
-                                frameworkUrl: 'Build/121.framework.js.unityweb',
-                                codeUrl: 'Build/121.wasm.unityweb',
+                                dataUrl: 'Build/postweb 2.data.unityweb',
+                                frameworkUrl: 'Build/postweb 2.framework.js.unityweb',
+                                codeUrl: 'Build/postweb 2.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'My',
                                 productName: 'Poster',
